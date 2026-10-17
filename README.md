@@ -26,3 +26,17 @@
   - **Pattern Matching:** Applying Regex for threat detection.
   - **Event Correlation:** Linking multiple events (failed logins) to a single source (IP) over time.
   - **Incident Response:** Automating the notification process to reduce "Mean Time to Detect" (MTTD).
+
+  -   ## 📸 Project Demo
+
+  ### Detection in Action
+  Below is the terminal output showing the Sentinel detecting a Brute Force attack in real-time:
+
+  ![Sentinel Demo](./demo.png)
+
+  **What is happening here?**
+  1. The Sentinel scans the `dummy_auth.log` file.
+  2. It detects 5 consecutive failed login attempts from IP `192.168.1.5`.
+  3. Once the threshold is hit, it triggers the **SECURITY ALERT** and dispatches a notification.
+
+  ---
